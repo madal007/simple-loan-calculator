@@ -9,6 +9,7 @@
     android:layout_marginLeft="20dp"
     android:layout_marginRight="20dp"
     android:layout_marginTop="20dp"
+    android:layout_marginBottom="40dp"
     tools:context=".MainActivity">
 
     <TextView
@@ -31,7 +32,7 @@
         android:layout_height="wrap_content"/>
 
     <EditText
-        android:id="@+id/money"
+        android:id="@+id/edtmoney"
         android:layout_below="@+id/title1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -42,19 +43,61 @@
     <TextView
         android:id="@+id/title2"
         android:layout_marginTop="20dp"
-        android:layout_below="@+id/money"
-        android:text="จำนวนเงินที่ขอกู้(บาท)"
+        android:layout_below="@+id/edtmoney"
+        android:text="อัตราดอกเบี้ย(%ต่อปี)"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
     <EditText
-        android:id="@+id/loan"
+        android:id="@+id/edtloan"
         android:layout_below="@+id/title2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="5"
         android:textAlignment="center"
         />
+
+    <TextView
+        android:id="@+id/title3"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/edtloan"
+        android:text="ระยะเวลาที่ขอกู้(ปี)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edtyear"
+        android:layout_below="@+id/title3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="2"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/Btcal"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="คำนวณ"
+        android:layout_below="@+id/edtyear"
+        android:backgroundTint="@color/teal_700"
+        />
+
+    <Button
+        android:id="@+id/Btsuggest"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*สินเชื้อแนะนำ"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/design_default_color_secondary"
+        />
+
+
+
 
 
 </RelativeLayout>
