@@ -47,6 +47,7 @@ class MainActivity : AppCompatActivity() {
 
         btnSug.setOnClickListener {
             var intent = Intent(this@MainActivity,SuggestActivity::class.java)
+            startActivity(intent)
         }
     }
 

@@ -12,7 +12,7 @@
         android:id="@+id/tvloan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ยอดผ่อนชำระต่อเดือน"
+        android:text="สินเชื่อแนะนำ"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_centerHorizontal="true"
         android:textStyle="bold"
